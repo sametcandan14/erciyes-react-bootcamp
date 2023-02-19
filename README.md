@@ -9,5 +9,6 @@
 <li>26 January- Taco menu page with flexbox&grid</li>
 <li>2 February- Array Function Sample</li>
 <li>13 February- Fetch and Axios Sample</li>
+<li>16 February- Template page with react components.</li>
 
 </ol>
