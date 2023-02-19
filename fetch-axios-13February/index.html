@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Axios and Fetch Sample</title>
+  </head>
+  <body>
+    <div class="fetch-add-post">
+      <h3>Fetch Sample</h3>
+      <div>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" />
+      </div>
+      <div>
+        <label for="contactName">Contact Name:</label>
+        <input type="text" id="contactName" />
+      </div>
+      <div>
+        <label for="city">City:</label>
+        <input type="text" id="city" />
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <input type="text" id="country" />
+      </div>
+      <div>
+        <button onclick="submitWithFetch()" type="button">Submit</button>
+      </div>
+      <hr />
+      <hr />
+    </div>
+    <div class="axios-add-post">
+      <h3>Axios Sample</h3>
+      <div>
+        <label for="companyNameAx">Company Name:</label>
+        <input type="text" id="companyNameAx" />
+      </div>
+      <div>
+        <label for="contactNameAx">Contact Name:</label>
+        <input type="text" id="contactNameAx" />
+      </div>
+      <div>
+        <label for="cityAx">City:</label>
+        <input type="text" id="cityAx" />
+      </div>
+      <div>
+        <label for="countryAx">Country:</label>
+        <input type="text" id="countryAx" />
+      </div>
+      <div>
+        <button onclick="submitWithAxios()" type="button">Submit</button>
+      </div>
+      <hr />
+      <hr />
+    </div>
+
+    <div class="companies">
+      <button onclick="getCompanies()">Get Companies</button>
+      <ul id="companyList"></ul>
+    </div>
+
+    <div class="deleteCompany">
+      <div>
+        <label>Id:</label>
+        <input type="text" id="supplierId" />
+      </div>
+      <div>
+        <button onclick="deleteSupplierById()">Delete</button>
+      </div>
+    </div>
+  </body>
+  <script src="fetch-axios.js"></script>
+</html>

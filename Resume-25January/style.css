@@ -1,0 +1,384 @@
+:root {
+  --primary-color: #bd5d38;
+  --secondary-color: #ca7d60;
+  --link-color: #e1b6a5;
+  --hover-color: bisque;
+  --active-color: white;
+  --text-color: #6c757d;
+  --brand-color: #343a40;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  /* font-family: 'Saira Extra Condensed', sans-serif; */
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.orange-text {
+  color: var(--primary-color);
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mb-3 {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  font-size: 56px;
+  margin-bottom: 48px;
+}
+
+/* sidebar */
+
+.sidebar {
+  background-color: var(--primary-color);
+  position: fixed;
+  width: 270px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .img-wrap img {
+  height: 160px;
+  width: auto;
+  border-radius: 50%;
+  border: 8px solid var(--secondary-color);
+}
+
+.sidebar .nav {
+  margin-top: 0.7rem;
+}
+
+.sidebar .nav .links li {
+  margin-top: 1.1rem;
+  text-align: center;
+}
+
+.sidebar .nav .links a {
+  text-transform: uppercase;
+  color: var(--link-color);
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.sidebar .nav .links a.active {
+  color: var(--active-color);
+}
+
+.sidebar .nav .links a:hover {
+  color: var(--hover-color);
+}
+
+/* end of sidebar */
+
+/* content */
+
+.content .box {
+  min-height: 100vh;
+  padding: 0 500px 0 320px;
+  border-bottom: 1px solid var(--link-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+/* about */
+
+.content #about h1 {
+  color: var(--brand-color);
+}
+
+.content #about h1,
+.content #about h1 span {
+  font-size: 96px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  margin-bottom: -2rem;
+}
+
+.content #about .address {
+  color: var(--text-color);
+}
+
+.content #about .address,
+.content #about .address span {
+  font-size: 24px;
+  margin-bottom: 48px;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.content #about .intro {
+  font-size: 18.4px;
+  color: var(--text-color);
+}
+
+.content #about .social-links {
+  margin-top: 60px;
+}
+
+.content #about .social-links .social-list {
+  display: flex;
+}
+
+.content #about .social-links .social-list .list-item a {
+  display: block;
+  position: relative;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+}
+
+.content #about .social-links .social-list .list-item a:hover {
+  background-color: var(--primary-color);
+}
+
+.content #about .social-links .social-list .list-item .fa-brands {
+  font-size: 30px;
+  color: var(--active-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* end of about */
+
+/* experience */
+
+.content #experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content #experience h2 {
+  font-size: 32px;
+}
+
+.content #experience h3 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.content #experience p {
+  color: var(--text-color);
+  margin: 10px 0 50px 0;
+}
+
+/* end of experience */
+
+/* education */
+
+.content #education h2 {
+  font-size: 32px;
+}
+
+.content #education h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--text-color);
+}
+
+.content #education p {
+  color: var(--text-color);
+}
+
+/* end of education */
+
+/* skills */
+
+.content #skills h3 {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.content #skills .skills-icons {
+  margin-bottom: 20px;
+}
+
+.content #skills .skills-icons i {
+  font-size: 48px;
+  color: var(--text-color);
+  margin-right: 16px;
+}
+
+.content #skills ul {
+  color: var(--text-color);
+}
+
+.content #skills ul li i {
+  margin-right: 4px;
+}
+/* end of skills */
+
+/* interests */
+
+.content #interests p {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+/* end of interests */
+
+/* awards */
+
+.content #awards ul {
+  color: var(--text-color);
+}
+
+.content #awards ul .fa-solid {
+  color: gold;
+  margin-right: 5px;
+}
+
+/* end of awards */
+
+/* end of content */
+
+/* responsive */
+
+/* mobile navbar */
+.mobile-navbar {
+  height: 3.5rem;
+  background-color: var(--primary-color);
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.mobile-navbar a.name {
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  color: var(--active-color);
+}
+
+.mobile-navbar a.menu-icon {
+  padding: 0 1rem;
+  color: var(--link-color);
+}
+.mobile-navbar .fa-solid {
+  font-size: 1.6rem;
+  padding: 4px 10px;
+  border: 3px solid var(--link-color);
+  border-radius: 5px;
+}
+
+/* end of mobile navbar */
+@media screen and (max-width: 1400px) {
+  .content .box {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .content #skills .skills-icons i {
+    font-size: 36px;
+
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar .img-wrap img {
+    height: 120px;
+  }
+
+  .section-header {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .content .box {
+    padding-left: 250px;
+  }
+
+  .content #about h1,
+  .content #about h1 span {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  .content #about .address,
+  .content #about .address span {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  .content #about .intro {
+    font-size: 0.8rem;
+  }
+
+  .content #about .social-links {
+    margin-top: 40px;
+  }
+
+  .content #about .social-links .social-list .list-item a {
+    width: 45px;
+    height: 45px;
+  }
+  .content #about .social-links .social-list .list-item .fa-brands {
+    font-size: 1.8rem;
+  }
+
+  .content #experience h2 {
+    font-size: 1.5rem;
+  }
+
+  .content #experience h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .sidebar {
+    display: none;
+  }
+  .content .box {
+    padding: 0 1rem;
+    height: auto;
+  }
+  .mobile-navbar {
+    display: block;
+  }
+}
+
+/* end of responsive */
