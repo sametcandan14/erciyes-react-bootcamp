@@ -18,30 +18,38 @@
 <ol>
 <li>25 January- Resume page with html and css <br>
 
-![alt text](./Resume-25January/resume.gif)
+![resume](./Resume-25January/resume.gif)
 
  </li>
+ <hr>
 <li>26 January- Taco menu page with flexbox&grid
 <br>
 
-![alt text](./Taco-26January/taco.gif)</li>
+![taco](./Taco-26January/taco.gif)</li>
+
+<hr>
 
 <li>2 February- Array Function Sample
 <br>
 
-![alt text](./Array-Functions-2February/customer-table.gif)
+![customer table](./Array-Functions-2February/customer-table.gif)
 
 </li>
+<hr>
 <li>13 February- Fetch and Axios Sample
 
 <br>
 
-![alt text](./fetch-axios-13February/axios-fetch.png)</li>
+![axios fetch](./fetch-axios-13February/axios-fetch.png)</li>
+
+<hr>
 
 <li>16 February- Template page with react components.
 
 <br>
 
-![alt text](./architect-16february/architect.gif)</li>
+![architect](./architect-16february/architect.gif)</li>
+
+<hr>
 
 </ol>
