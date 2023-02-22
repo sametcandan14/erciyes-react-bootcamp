@@ -10,6 +10,7 @@
 <li>2 February- Array Function Sample</li>
 <li>13 February- Fetch and Axios Sample</li>
 <li>16 February- Template page with react components.</li>
+<li>20 February- React Api Table</li>
 
 </ol>
 
@@ -49,6 +50,12 @@
 <br>
 
 ![architect](./architect-16february/architect.gif)</li>
+
+<hr>
+
+<br>
+
+![react-api table](./api-table-react-20february/react-api-table.gif)</li>
 
 <hr>
 

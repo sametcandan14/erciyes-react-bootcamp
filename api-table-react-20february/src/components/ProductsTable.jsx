@@ -16,7 +16,7 @@ function ProductsTable() {
         </thead>
         <tbody>
           {products.map((product) => {
-            if (product.unitsInStock != 0) {
+            if (product.unitsInStock !== 0) {
               return (
                 <tr
                   key={product.id}
@@ -31,6 +31,8 @@ function ProductsTable() {
                   <td>{product.quantityPerUnit}</td>
                 </tr>
               );
+            } else {
+              return "";
             }
           })}
         </tbody>
