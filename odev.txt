@@ -1,0 +1,7 @@
+20.02
+* Productların bir table da listelenmesi
+https://northwind.vercel.app/api/products
+(Id, Name, Stock, Unit Price, quantity per unit)
+
+* Eğer unitPrice 20 den büyükse o satır kırmızı olsun!
+* Stok 0 olanlar table da gözükmesin
