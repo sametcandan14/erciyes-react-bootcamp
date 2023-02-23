@@ -15,26 +15,22 @@ function ProductsTable() {
           </tr>
         </thead>
         <tbody>
-          {products.map((product) => {
-            if (product.unitsInStock !== 0) {
-              return (
-                <tr
-                  key={product.id}
-                  style={
-                    product.unitPrice > 20 ? { backgroundColor: "red" } : {}
-                  }
-                >
-                  <td>{product.id}</td>
-                  <td>{product.name}</td>
-                  <td>{product.unitsInStock}</td>
-                  <td>{product.unitPrice}</td>
-                  <td>{product.quantityPerUnit}</td>
-                </tr>
-              );
-            } else {
-              return "";
-            }
-          })}
+          {products.map((product) =>
+            product.unitsInStock !== 0 ? (
+              <tr
+                key={product.id}
+                style={product.unitPrice > 20 ? { backgroundColor: "red" } : {}}
+              >
+                <td>{product.id}</td>
+                <td>{product.name}</td>
+                <td>{product.unitsInStock}</td>
+                <td>{product.unitPrice}</td>
+                <td>{product.quantityPerUnit}</td>
+              </tr>
+            ) : (
+              ""
+            )
+          )}
         </tbody>
       </table>
     </div>
