@@ -11,8 +11,11 @@
 <li>13 February- Fetch and Axios Sample</li>
 <li>16 February- Template page with react components.</li>
 <li>20 February- React Api Table</li>
+<li>23 February- Table with useState useEffect probs and Axios</li>
 
 </ol>
+
+<!-- ----------------------------- -->
 
 <h2>Homework Details</h2>
 
@@ -58,6 +61,14 @@
 <br>
 
 ![react-api table](./api-table-react-20february/react-api-table.gif)</li>
+
+<hr>
+
+<li>20 February- React Api Table
+
+<br>
+
+![axios-api table](./axios-usestate-useeffect-23february/axios.gif)</li>
 
 <hr>
 
