@@ -19,6 +19,10 @@ function PostSupplier({ setLoading, loadSuppliers }) {
     axios
       .post("https://northwind.vercel.app/api/suppliers", newSupplier)
       .then((res) => loadSuppliers());
+
+    setCountry("");
+    setcompanyName("");
+    setcontactName("");
   };
 
   return (
@@ -28,6 +32,7 @@ function PostSupplier({ setLoading, loadSuppliers }) {
         <input
           type="text"
           id="companyName"
+          value={companyName}
           onChange={(e) => setcompanyName(e.target.value)}
         />
       </div>
@@ -36,6 +41,7 @@ function PostSupplier({ setLoading, loadSuppliers }) {
         <input
           type="text"
           id="contactName"
+          value={contactName}
           onChange={(e) => setcontactName(e.target.value)}
         />
       </div>
@@ -44,6 +50,7 @@ function PostSupplier({ setLoading, loadSuppliers }) {
         <input
           type="text"
           id="country"
+          value={country}
           onChange={(e) => setCountry(e.target.value)}
         />
       </div>
