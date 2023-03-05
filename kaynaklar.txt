@@ -1,0 +1,26 @@
+import export mdn
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+
+
+fragment
+https://beta.reactjs.org/reference/react/Fragment
+
+html to jsx
+https://transform.tools/html-to-jsx
+
+string template literal
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+Form Kütüphaneleri
+https://formik.org/
+https://react-hook-form.com/
+
+UI Libraries
+https://ant.design/ **
+https://mui.com/  ***
+https://chakra-ui.com/ **
+https://react-bootstrap.github.io/ *
+
+
+Beleş Admin Panel
+https://drive.google.com/file/d/1JPJ4pX-l1nXs2s2HVQfNItsh6hGP-Wv0/view?usp=sharing

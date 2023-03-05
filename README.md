@@ -12,6 +12,7 @@
 <li>16 February- Template page with react components.</li>
 <li>20 February- React Api Table</li>
 <li>23 February- Table with useState useEffect probs and Axios</li>
+<li>28 February- Material Data Grid sample</li>
 
 </ol>
 
@@ -69,6 +70,14 @@
 <br>
 
 ![axios-api table](./axios-usestate-useeffect-23february/axios.gif)</li>
+
+<hr>
+
+<li>28 February- Material Data Grid sample
+
+<br>
+
+![material data grid sample](./datagridsample-28february/dataGrid.gif)</li>
 
 <hr>
 
