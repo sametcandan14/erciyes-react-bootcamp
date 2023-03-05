@@ -12,8 +12,10 @@ function DataGridProducts() {
   const [open, setOpen] = useState(false);
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [id, setDeleteId] = useState(0);
 
-  const handleClickOpen = () => {
+  const handleClickOpen = (id) => {
+    setDeleteId(id);
     setOpen(true);
   };
 
@@ -32,19 +34,21 @@ function DataGridProducts() {
     setLoading(false);
   };
 
-  const deleteProduct = (item) => {
+  const deleteProduct = (id) => {
+    console.log(id);
     handleClose();
     setLoading(true);
     axios
-      .delete("https://northwind.vercel.app/api/products/" + item.id)
+      .delete("https://northwind.vercel.app/api/products/" + id)
       .then((res) => {
+        console.log(res);
         loadData();
       });
   };
 
   let columns = [
     {
-      headerName: "ID",
+      headerName: "id",
       field: "id",
       flex: 0.3,
     },
@@ -70,33 +74,15 @@ function DataGridProducts() {
     },
     {
       headerName: "Delete Product",
-      renderCell: (item) => {
+      renderCell: (params) => {
         return (
           <>
-            <Button variant="outlined" onClick={handleClickOpen}>
+            <Button
+              variant="outlined"
+              onClick={() => handleClickOpen(params.row.id)}
+            >
               Delete Product
             </Button>
-            <Dialog
-              open={open}
-              onClose={handleClose}
-              aria-labelledby="alert-dialog-title"
-              aria-describedby="alert-dialog-description"
-            >
-              <DialogTitle id="alert-dialog-title">
-                {"Are you sure?"}
-              </DialogTitle>
-              <DialogContent>
-                <DialogContentText id="alert-dialog-description">
-                  The product will be deleted. Are you sure?
-                </DialogContentText>
-              </DialogContent>
-              <DialogActions>
-                <Button onClick={handleClose}>Cancel</Button>
-                <Button onClick={() => deleteProduct(item)} autoFocus>
-                  Yes
-                </Button>
-              </DialogActions>
-            </Dialog>
           </>
         );
       },
@@ -112,6 +98,29 @@ function DataGridProducts() {
         pageSize={20}
         loading={loading}
       />
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{"Are you sure?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            The product will be deleted. Are you sure?
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Cancel</Button>
+          <Button
+            onClick={(e) => deleteProduct(id)}
+            autoFocus
+            variant="contained"
+          >
+            Yes
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 }
