@@ -35,13 +35,11 @@ function DataGridProducts() {
   };
 
   const deleteProduct = (id) => {
-    console.log(id);
     handleClose();
     setLoading(true);
     axios
       .delete("https://northwind.vercel.app/api/products/" + id)
       .then((res) => {
-        console.log(res);
         loadData();
       });
   };
