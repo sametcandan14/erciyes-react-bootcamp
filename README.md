@@ -13,6 +13,7 @@
 <li>20 February- React Api Table</li>
 <li>23 February- Table with useState useEffect probs and Axios</li>
 <li>28 February- Material Data Grid sample</li>
+<li>10 March- Api Update Sample</li>
 
 </ol>
 
@@ -78,6 +79,14 @@
 <br>
 
 ![material data grid sample](./datagridsample-28february/dataGrid.gif)</li>
+
+<hr>
+
+<li>10 March- Api Update Sample
+
+<br>
+
+![api update sample](./api-update-10March/api-update.gif)</li>
 
 <hr>
 
